@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: http://s4ds.com.br/sitemap.xml
