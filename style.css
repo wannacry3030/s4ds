@@ -7830,7 +7830,7 @@ select {
     font-size: 14px; /* Tamanho da fonte menor */
   }
   .kv-ee-menu li {
-    padding: 0 8px; /* Espaçamento lateral menor */
+    padding: 0 4px; /* Espaçamento lateral menor */
   }
   /* Outros estilos adicionais que você queira ajustar */
 }
@@ -7877,7 +7877,8 @@ select {
   }
   .navigation-3 nav > ul {
     list-style: none;
-    margin: 0;
+    padding-left: 0;
+    /* margin: 0; */
     display: flex;
     white-space: nowrap;
     justify-content: center;
