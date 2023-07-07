@@ -7834,6 +7834,15 @@ select {
   }
   /* Outros estilos adicionais que você queira ajustar */
 }
+@media (max-width: 370px) {
+  .kv-ee-menu {
+    font-size: 12px; /* Tamanho da fonte menor */
+  }
+  .kv-ee-menu li {
+    padding: 0 3px; /* Espaçamento lateral menor */
+  }
+  /* Outros estilos adicionais que você queira ajustar */
+}
 @media (min-width: 92px) {
   /* .navigation-3
     .kv-ee-navigation-position
