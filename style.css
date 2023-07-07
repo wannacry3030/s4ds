@@ -7825,7 +7825,7 @@ select {
 .navigation-3 .kv-scrolled .kv-ee-mobile nav ul li a:after {
   background-color: var(--kv-ee-text1-card) !important;
 }
-@media (min-width: 992px) {
+@media (min-width: 92px) {
   .navigation-3
     .kv-ee-navigation-position
     .kv-ee-container-fluid.kv-ee-navigation {
@@ -7868,20 +7868,17 @@ select {
     z-index: 1;
   }
   .navigation-3 nav > ul {
-    /* list-style: none; */
-    /* margin: 0.75rem 0;
+    list-style: none;
+    margin: 0.75rem 0;
     padding: 0;
     display: flex;
     white-space: nowrap;
     justify-content: center;
     align-items: center;
-    flex-direction: row; */
-    display: flex;
     flex-direction: row;
-    justify-content: center;
   }
   .navigation-3 nav > ul li {
-    display: inline-block;
+    display: flex;
     line-height: 2.25rem;
     padding: 0 12px;
     text-overflow: ellipsis;
@@ -7902,7 +7899,7 @@ select {
   }
   .navigation-3 nav > ul li a:after {
     position: absolute;
-    display: block;
+    display: flex;
     content: "";
     width: 100%;
     height: 2px;
