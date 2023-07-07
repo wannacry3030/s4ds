@@ -24,7 +24,6 @@
   --kv-ee-heading-font-family: Red Hat Display;
   --kv-ee-heading-font-weight: 900;
   --kv-ee-heading-font-style: normal;
-  --kv-ee-body-font-family: Montserrat;
   --kv-ee-body-font-weight: 400;
   --kv-ee-body-font-style: normal;
   --kv-ee-font-size-factor: 1;
@@ -4689,12 +4688,7 @@ section > .kv-content .kv-ee-body-text {
 .kv-main .kv-ee-body--xl,
 .kv-main .kv-ee-section-subtitle,
 .kv-main .kv-ee-subtitle {
-  font-family: var(
-    --kv-ee-body-font-family,
-    "Nunito Sans",
-    "Open Sans",
-    sans-serif
-  );
+  font-family: 'Inter', sans-serif;
   font-weight: var(--kv-ee-body-font-weight, normal);
   font-style: var(--kv-ee-body-font-style, normal);
 }
@@ -4720,12 +4714,7 @@ section > .kv-content .kv-ee-body-text {
 .kv-main .kv-ee-title--xs *,
 .kv-main .kv-ee-title--xs:not(.kv-ee-section-subtitle),
 .kv-main .kv-ee-title:not(.kv-ee-section-subtitle) {
-  font-family: var(
-    --kv-ee-heading-font-family,
-    "Nunito Sans",
-    "Open Sans",
-    sans-serif
-  );
+  font-family: "Inter", sans-serif;
   font-weight: var(--kv-ee-heading-font-weight, normal);
   font-style: var(--kv-ee-heading-font-style, normal);
 }

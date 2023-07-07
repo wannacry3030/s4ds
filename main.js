@@ -78,7 +78,7 @@ window._site = {
       "country": "BR",
     },
     "logo": { "value": "" },
-    "phone": "+55 61 8156-6107",
+    "phone": "+55 61 98156-6107",
     "email": "contato@s4ds.com.br",
     "companyName": "S4DS",
     "title": "S4DS",
