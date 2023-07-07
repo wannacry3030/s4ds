@@ -7825,6 +7825,15 @@ select {
 .navigation-3 .kv-scrolled .kv-ee-mobile nav ul li a:after {
   background-color: var(--kv-ee-text1-card) !important;
 }
+@media (max-width: 767px) {
+  .kv-ee-menu {
+    font-size: 14px; /* Tamanho da fonte menor */
+  }
+  .kv-ee-menu li {
+    padding: 0 8px; /* Espaçamento lateral menor */
+  }
+  /* Outros estilos adicionais que você queira ajustar */
+}
 @media (min-width: 92px) {
   /* .navigation-3
     .kv-ee-navigation-position
