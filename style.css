@@ -7926,12 +7926,19 @@ select {
 }
 @media (max-width: 767px) {
   .kv-ee-menu {
-    font-size: 0.8em; /* Tamanho da fonte menor */
+    font-size: 0.9em; /* Tamanho da fonte menor */
   }
-
+  .navigation-3 .kv-ee-container-fluid.kv-ee-navigation header {
+    justify-content: left;
+  }
   /* Outros estilos adicionais que você queira ajustar */
 }
 @media (max-width: 370px) {
+  .kv-ee-menu {
+    font-size: 0.7em; /* Tamanho da fonte menor */
+  }
+}
+@media (max-width: 250px) {
   .kv-ee-menu {
     font-size: 0.5em; /* Tamanho da fonte menor */
   }
