@@ -26,15 +26,17 @@
   justify-content: center;
   align-items: center;
 }
+
 .cta2 {
   margin: 25px;
 }
 .cta {
+  cursor: pointer;
   display: flex;
   padding: 11px 33px;
   text-decoration: none;
   font-family: "Inter", sans-serif;
-  font-size: 25px;
+  font-size: 1.3rem;
   font-weight: 700;
   color: #212121;
   background: #29b4cf;
