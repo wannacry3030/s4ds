@@ -8911,15 +8911,15 @@ select {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--kv-ee-accent1);
+  background-color: #212121;
   margin-right: 0.5rem;
-  width: 2rem;
-  height: 2rem;
+  width: 3rem;
+  height: 3rem;
   border-radius: 50%;
   text-decoration: none;
 }
 .bajigu80 .kv-ee-social-icons .kv-ee-social-link i {
-  color: var(--kv-ee-text1-accent1);
+  color: #fff;
   text-shadow: none;
 }
 .bajigu80 .kv-ee-social-icons .kv-ee-social-link svg {
@@ -8930,11 +8930,7 @@ select {
   transition: fill 0.3s;
 }
 .bajigu80 .kv-ee-social-icons .kv-ee-social-link:hover {
-  background-color: hsl(
-    var(--kv-ee-accent1--h),
-    var(--kv-ee-accent1--s),
-    calc(var(--kv-ee-accent1--l) + 20%)
-  );
+  background-color: #29b4cf;
 }
 .bajigu80 .kv-ee-social-icons .kv-ee-social-link:hover svg {
   fill: hsl(
