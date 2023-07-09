@@ -1,4 +1,4 @@
-.float {
+.whatsapp {
   position: fixed;
   width: 60px;
   height: 60px;
@@ -12,7 +12,7 @@
   box-shadow: 2px 2px 3px #1d2b64;
   z-index: 100;
 }
-.float:hover {
+.whatsapp:hover {
   background-color: #fff;
   color: #25d366;
 }
