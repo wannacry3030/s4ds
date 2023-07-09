@@ -20,6 +20,89 @@
   margin-top: 16px;
 }
 
+.cta {
+  display: flex;
+  padding: 11px 33px;
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+  color: #212121;
+  background: #29b4cf;
+  transition: 1s;
+  box-shadow: 6px 6px 0 #424242;
+  transform: skewX(-15deg);
+  border: none;
+}
+
+.cta:focus {
+  outline: none;
+}
+
+.cta:hover {
+  transition: 0.5s;
+  box-shadow: 10px 10px 0 #246470;
+}
+
+.cta .second {
+  transition: 0.5s;
+  margin-right: 0px;
+}
+
+.cta:hover .second {
+  transition: 0.5s;
+  margin-right: 45px;
+}
+
+.span {
+  transform: skewX(15deg);
+}
+
+.second {
+  width: 20px;
+  margin-left: 30px;
+  position: relative;
+  top: 12%;
+}
+
+.one {
+  transition: 0.4s;
+  transform: translateX(-60%);
+}
+
+.two {
+  transition: 0.5s;
+  transform: translateX(-30%);
+}
+
+.cta:hover .three {
+  animation: color_anim 1s infinite 0.2s;
+}
+
+.cta:hover .one {
+  transform: translateX(0%);
+  animation: color_anim 1s infinite 0.6s;
+}
+
+.cta:hover .two {
+  transform: translateX(0%);
+  animation: color_anim 1s infinite 0.4s;
+}
+
+@keyframes color_anim {
+  0% {
+    fill: white;
+  }
+
+  50% {
+    fill: #fbc638;
+  }
+
+  100% {
+    fill: white;
+  }
+}
+
 :root {
   --kv-ee-heading-font-family: Red Hat Display;
   --kv-ee-heading-font-weight: 900;
@@ -657,8 +740,8 @@ html {
     max-width: 41.66667%;
   }
   .kv-main .kv-ee-col-lg-6 {
-    flex: 0 0 50%;
-    max-width: 50%;
+    flex: 0 0 85%;
+    max-width: 85%;
   }
   .kv-main .kv-ee-col-lg-7 {
     flex: 0 0 58.33333%;
@@ -4688,7 +4771,7 @@ section > .kv-content .kv-ee-body-text {
 .kv-main .kv-ee-body--xl,
 .kv-main .kv-ee-section-subtitle,
 .kv-main .kv-ee-subtitle {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: var(--kv-ee-body-font-weight, normal);
   font-style: var(--kv-ee-body-font-style, normal);
 }
@@ -8288,6 +8371,10 @@ select {
 }
 .qobusy09 .kv-ee-main-content {
   order: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .qobusy09 .kv-ee-row {
   justify-content: space-around;
@@ -8346,7 +8433,7 @@ select {
   line-height: 1.75rem;
 }
 .qobusy09 .kv-ee-align-left {
-  text-align: left;
+  text-align: center;
 }
 .qobusy09 .kv-ee-align-center {
   text-align: center;
