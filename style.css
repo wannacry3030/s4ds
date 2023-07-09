@@ -5153,6 +5153,7 @@ button.kv-ee-button-ghost-text {
 .kv-ee-button-xs div,
 .kv-ee-button-xs span {
   padding: 0 !important;
+  color: #212121;
 }
 .kv-ee-button-lg div,
 .kv-ee-button-lg i,
@@ -5638,7 +5639,7 @@ a:focus {
   outline-offset: 2px;
 }
 .kv-main section a {
-  text-decoration: underline !important;
+  text-decoration: none !important;
   font-family: inherit;
   line-height: inherit;
   cursor: pointer;
