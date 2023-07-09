@@ -19,7 +19,16 @@
 .my-float {
   margin-top: 16px;
 }
+.cta-entre {
+  background-color: #212121;
+  display: flex;
 
+  justify-content: center;
+  align-items: center;
+}
+.cta2 {
+  margin: 25px;
+}
 .cta {
   display: flex;
   padding: 11px 33px;
@@ -30,7 +39,7 @@
   color: #212121;
   background: #29b4cf;
   transition: 1s;
-  box-shadow: 6px 6px 0 #424242;
+  box-shadow: 7px 7px 0 #424242;
   transform: skewX(-15deg);
   border: none;
 }
@@ -95,7 +104,7 @@
   }
 
   50% {
-    fill: #fbc638;
+    fill: #212121;
   }
 
   100% {
@@ -4941,6 +4950,7 @@ strong {
 }
 .kv-ee-description {
   color: var(--kv-ee-text1);
+  margin-bottom: 3rem;
 }
 .kv-ee-custom-text-cl1 {
   color: var(--kv-ee-customtext1) !important;
