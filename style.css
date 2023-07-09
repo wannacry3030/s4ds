@@ -64,7 +64,9 @@
   transition: 0.5s;
   margin-right: 45px;
 }
-
+.logo1 {
+  max-width: 450px;
+}
 .span {
   transform: skewX(15deg);
 }
