@@ -5664,7 +5664,7 @@ a:focus {
 .kv-main section .kv-ee-default-card a,
 .kv-main section .kv-ee-item-card a {
   color: var(--kv-ee-text2-card);
-  text-shadow: none;
+  text-shadow: #fff;
 }
 .kv-main section .kv-ee-card a:hover,
 .kv-main section .kv-ee-content-card a:hover,
@@ -5714,32 +5714,38 @@ a:focus {
   background-color: var(--kv-ee-card);
   color: var(--kv-ee-text1-card);
   text-shadow: none;
+  border-radius: 12px;
 }
-.kv-ee-drop-shadow-sm {
-  box-shadow: 0 4px 3px -2px rgba(0, 0, 0, 0.17),
-    0 2px 2px 0 rgba(0, 0, 0, 0.13) !important;
+/* .kv-ee-drop-shadow-sm {
+  -webkit-box-shadow: 22px 22px 19px 1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 22px 22px 19px 1px rgba(0, 0, 0, 0.75);
+  box-shadow: 22px 22px 19px 1px rgba(0, 0, 0, 0.75);
 }
 .kv-ee-drop-shadow-sm.kv-ee-default-card {
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.04), 0 4px 3px -2px rgba(0, 0, 0, 0.07),
-    0 2px 2px 0 rgba(0, 0, 0, 0.05) !important;
+  -webkit-box-shadow: 22px 22px 19px 1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 22px 22px 19px 1px rgba(0, 0, 0, 0.75);
+  box-shadow: 22px 22px 19px 1px rgba(0, 0, 0, 0.75);
 }
 .kv-ee-drop-shadow-md {
-  box-shadow: 0 7px 5px -5px rgba(0, 0, 0, 0.19),
-    0 6px 8px -2px rgba(0, 0, 0, 0.18), 0 6px 6px 0 rgba(0, 0, 0, 0.1) !important;
-}
+  -webkit-box-shadow: 22px 22px 19px 1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 22px 22px 19px 1px rgba(0, 0, 0, 0.75);
+  box-shadow: 22px 22px 19px 1px rgba(0, 0, 0, 0.75);
+} */
 .kv-ee-drop-shadow-md.kv-ee-default-card {
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.04), 0 7px 5px -5px rgba(0, 0, 0, 0.11),
-    0 6px 8px -2px rgba(0, 0, 0, 0.09), 0 6px 6px 0 rgba(0, 0, 0, 0.03) !important;
+  -webkit-box-shadow: 11px 15px 12px 1px rgba(33, 33, 33, 0.75);
+  -moz-box-shadow: 11px 15px 12px 1px rgba(33, 33, 33, 0.75);
+  box-shadow: 11px 15px 12px 1px rgba(33, 33, 33, 0.75);
 }
-.kv-ee-drop-shadow-lg {
-  box-shadow: 0 14px 18px -8px rgba(0, 0, 0, 0.19),
-    0 12px 12px -5px rgba(0, 0, 0, 0.17), 0 11px 8px 0 rgba(0, 0, 0, 0.08) !important;
+/* .kv-ee-drop-shadow-lg {
+  -webkit-box-shadow: 22px 22px 19px 1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 22px 22px 19px 1px rgba(0, 0, 0, 0.75);
+  box-shadow: 22px 22px 19px 1px rgba(0, 0, 0, 0.75);
 }
 .kv-ee-drop-shadow-lg.kv-ee-default-card {
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.04),
-    0 14px 18px -8px rgba(0, 0, 0, 0.11), 0 12px 12px -5px rgba(0, 0, 0, 0.09),
-    0 11px 8px 0 rgba(0, 0, 0, 0.03) !important;
-}
+  -webkit-box-shadow: 22px 22px 19px 1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 22px 22px 19px 1px rgba(0, 0, 0, 0.75);
+  box-shadow: 22px 22px 19px 1px rgba(0, 0, 0, 0.75);
+} */
 .kv-ee-contact-form-success {
   position: absolute;
   bottom: 0;
