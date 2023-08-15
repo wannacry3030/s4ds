@@ -1,0 +1,220 @@
+body {
+  font-family: "Inter";
+  margin: 0;
+  line-height: 1.42857143;
+  color: #333;
+}
+* {
+  box-sizing: border-box;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+img {
+  max-width: 70%;
+  border: 0;
+}
+
+h1,
+h2 {
+  text-transform: uppercase;
+  text-align: center;
+}
+h2 {
+  color: #354b60;
+  font-size: 26px;
+
+  font-weight: 700;
+}
+textarea {
+  resize: vertical;
+}
+a {
+  color: #2c3e50;
+  transition: all 0.5s ease-in-out;
+  text-decoration: none;
+}
+a:hover {
+  color: #f39c12;
+  text-decoration: none;
+}
+::selection {
+  background: #354b60;
+  color: #fff;
+}
+::-moz-selection {
+  background: #354b60;
+  color: #fff;
+}
+
+.tooltip-container {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+.tooltip-container .tooltip-text {
+  visibility: hidden;
+  font-size: 14px;
+  width: 100px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: calc(100% + 10px);
+  left: 50%;
+  margin-left: -50px;
+}
+.tooltip-container .tooltip-text::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+.tooltip-container:hover .tooltip-text {
+  visibility: visible;
+}
+#top {
+  min-height: 100vh;
+  /* background: url("assets/nordWallpaper.webp") no-repeat fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover; */
+  background-size: cover;
+  background-position: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 20px;
+  position: relative;
+  overflow: hidden;
+}
+#video-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#top .logo {
+  text-align: center;
+  position: relative;
+  max-width: 60%;
+}
+#top .logo img {
+  width: 150px;
+}
+#top .logo h1 {
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 42px;
+}
+#top .logo h2 {
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 22px;
+  margin: 0;
+  margin-bottom: 40px;
+}
+#top .links {
+  margin-top: 60px;
+  font-size: 28px;
+}
+#top .links li {
+  margin: 0 10px;
+}
+#top .links a {
+  color: #fff;
+}
+#top .links a:hover {
+  color: #f39c12;
+  text-shadow: 0 0 10px #333;
+}
+
+@media screen and (max-width: 768px) {
+  p {
+    margin-top: 20px;
+  }
+  #top .logo {
+    text-align: center;
+    position: relative;
+    max-width: 100%;
+  }
+}
+.list-inline {
+  padding-left: 0;
+  margin-left: -5px;
+  list-style: none;
+}
+.list-inline > li {
+  display: inline-block;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+ol,
+ul {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.cssbuttons-io-button {
+  background: #25d366;
+  color: rgb(0, 0, 0);
+  font-family: inherit;
+  padding: 0.35em;
+  padding-left: 1.2em;
+  font-size: 17px;
+  font-weight: 500;
+  border-radius: 0.9em;
+  border: none;
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  box-shadow: inset 0 0 1.6em -0.6em #25d366;
+  overflow: hidden;
+  position: relative;
+  height: 2.8em;
+  padding-right: 3.3em;
+  cursor: pointer;
+}
+
+.cssbuttons-io-button .icon {
+  background: white;
+  margin-left: 1em;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.2em;
+  width: 2.2em;
+  border-radius: 0.7em;
+  box-shadow: 0.1em 0.1em 0.6em 0.2em #b4e4c6;
+  right: 0.3em;
+  transition: all 0.3s;
+}
+
+.cssbuttons-io-button:hover .icon {
+  width: calc(100% - 0.6em);
+}
+
+.cssbuttons-io-button .icon svg {
+  width: 1.1em;
+  transition: transform 0.3s;
+  color: #333;
+}
+
+.cssbuttons-io-button:hover .icon svg {
+  transform: translateX(0.1em);
+}
+
+.cssbuttons-io-button:active .icon {
+  transform: scale(0.95);
+}
