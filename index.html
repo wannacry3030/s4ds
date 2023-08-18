@@ -65,7 +65,7 @@ Feito de advogado para advogado! Depois de validarmos os processos em nosso pró
     <a aria-label="icone do whatsapp, converse conosco e tire duvidas"
     href="https://s4ds.com.br/contato.html"
       class="whatsapp"
-      target="_blank"
+      target="_blank" onclick="sendConversionEvent();"
     >
       <i class="fa fa-whatsapp my-float"></i>
     </a>
@@ -229,7 +229,7 @@ Feito de advogado para advogado! Depois de validarmos os processos em nosso pró
 
                         <a
                         href="https://s4ds.com.br/contato.html"
-                          target="_blank"
+                          target="_blank" onclick="sendConversionEvent();"
                           ><button class="cta">
                             <span class="span">Quero mais clientes</span>
 
@@ -348,7 +348,7 @@ Feito de advogado para advogado! Depois de validarmos os processos em nosso pró
                         </p>
                         <a
                         href="https://s4ds.com.br/contato.html"
-                          target="_blank"
+                          target="_blank" onclick="sendConversionEvent();"
                         >
                           <button class="cta">
                             <span class="span">Atrair mais clientes!</span>
@@ -749,7 +749,7 @@ Feito de advogado para advogado! Depois de validarmos os processos em nosso pró
             <section class="cta-entre">
               <a
               href="https://s4ds.com.br/contato.html"
-                target="_blank"
+                target="_blank" onclick="sendConversionEvent();"
               >
                 <button class="cta cta2">
                   <span class="span">Quero expandir meu alcance!</span>
@@ -863,7 +863,7 @@ Feito de advogado para advogado! Depois de validarmos os processos em nosso pró
                         </p>
                         <a
                         href="https://s4ds.com.br/contato.html"
-                          target="_blank"
+                          target="_blank" onclick="sendConversionEvent();"
                         >
                           <button class="cta">
                             <span class="span">Quero prospectar mais</span>
@@ -1216,7 +1216,7 @@ Feito de advogado para advogado! Depois de validarmos os processos em nosso pró
                           <a
                           href="https://s4ds.com.br/contato.html"
 
-                          target="_blank"
+                          target="_blank" onclick="sendConversionEvent();"
                           class="kv-ee-social-link kv-ee-opaque"
                           aria-label="Social link Facebook"
                         >
@@ -1356,6 +1356,40 @@ Feito de advogado para advogado! Depois de validarmos os processos em nosso pró
     <script type="text/javascript">
       window.dataLayer=window.dataLayer||[];function gtag(){window.dataLayer.push(arguments);}gtag('js',new Date());gtag('config', 'G-100GV875X6')
     </script>
-   
+    <script>
+      // Função para enviar o evento de conversão
+      function sendConversionEvent() {
+        // Substitua 'PIXEL_ID' pelo ID do seu pixel e 'ACCESS_TOKEN' pelo token de acesso válido
+        const pixelId = '1466247890806381';
+        const accessToken = 'EAANSLGTfs3sBO80rFKW5WCn7CJ2qYDRj1f6umJ6i6wrvkkwR7ZBkgbUaCtHjnQxkfBALCOC7lshEmz2q6qH3oBmdEcZBMNAMDCGFrvE0DZBmNlsPIzpCEhwYliffhR3tK6cZCAuZAz93TizBpTi2jOrImZBzuYPqcpin5XUBDSAwrg263g5ZAZA5ZBc5As8FQ4OFr4AZDZD';
+    
+        // Defina os parâmetros do evento
+        const eventData = {
+          event_name: 'contato',
+          event_time: Math.floor(Date.now() / 1000),
+          user_data: {
+            em: ['7b17fb0bd173f625b58636fb796407c22b3d16fc78302d79f0fd30c2fc2fc068'],
+            ph: []
+          },
+          action_source: 'website'
+        };
+    
+        // Envie o evento para o Facebook Meta API
+        fetch(`https://graph.facebook.com/v12.0/${pixelId}/events?access_token=${accessToken}`, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify([eventData])
+        })
+        .then(response => response.json())
+        .then(data => {
+          console.log('Evento de conversão enviado:', data);
+        })
+        .catch(error => {
+          console.error('Erro ao enviar o evento de conversão:', error);
+        });
+      }
+    </script>
   </body>
 </html>

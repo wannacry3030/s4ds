@@ -40,6 +40,7 @@
 
       <a
         href="https://wa.me/+5561981566107?text=Ol%C3%A1,%20gostaria%20de%20posicionar%20meu%20escritório%20digitalmente!"
+        onclick="sendWhatsAppClickEvent(); return true;"
       >
         <button class="cssbuttons-io-button">
           Entrar em contato
@@ -59,5 +60,36 @@
           </div></button
       ></a>
     </header>
+    <script>
+      function sendWhatsAppClickEvent() {
+        const pixelId = '3635071680109601'; // Seu ID de pixel
+        const accessToken = 'EAANSLGTfs3sBO4zxUwEhCo1PdPBZBmyjkQ5ufoURUHv55mDhWsIrc5WVINeClpxFhfM4eNu8Y1YwE2vvZC2L0D9lrTZBnkP4wwLlZAJRqP78XJhaOcx7ig0bvdDQhvbDnDxg3ryfnYJ61KZClIeZB7RBnfHbjmXkKZAscTtzVnl7mrUSfMs9yD2eKPMcIXrCsI4dQZDZD'; // Seu token de acesso
+
+        const eventData = {
+          event_name: 'clique wpp',
+          event_time: Math.floor(Date.now() / 1000),
+          user_data: {
+            em: ['7b17fb0bd173f625b58636fb796407c22b3d16fc78302d79f0fd30c2fc2fc068'],
+            ph: []
+          },
+          action_source: 'chat'
+        };
+
+        fetch(`https://graph.facebook.com/v12.0/${pixelId}/events?access_token=${accessToken}`, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify([eventData])
+        })
+        .then(response => response.json())
+        .then(data => {
+          console.log('Evento de clique no WhatsApp enviado:', data);
+        })
+        .catch(error => {
+          console.error('Erro ao enviar o evento de clique:', error);
+        });
+      }
+    </script>
   </body>
 </html>
